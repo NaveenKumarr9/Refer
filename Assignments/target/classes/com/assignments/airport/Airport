@@ -1,0 +1,35 @@
+TreeMap I-Airport Details
+
+Airports Authority of India (AAI) aims to register the details of all the airports in India. Airports have a unique IATA (Internatinal Air Transport Association) Airport Code. This IATA code and the airport details are stored in a Treemap.
+
+Create a class named Airport with the following private attributes
+       
+                  String iataAirportCode
+                  String name
+                  String city
+
+Create a list of objects of Airport  type.
+
+Include 3 argument constructor with argument names iataAirportCode, name and city.
+iataAirportCode is the key and airport details is the value. 
+Write a program to display the details of all the airports stored in this TreeMap.
+
+Input and Output Format:
+ 
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output:
+Enter the number of airports
+2
+Enter the details of the airport 1
+MAA
+Chennai International Airport
+Chennai
+Enter the details of the airport 2
+DEL
+Indira Gandhi  International Airport
+New Delhi
+Airport Details
+DEL--Indira Gandhi International Airport--New Delhi
+MAA--Chennai International Airport--Chennai

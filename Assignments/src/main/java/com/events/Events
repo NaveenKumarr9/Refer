@@ -1,0 +1,87 @@
+Filter Events(use Streams to filter the data)
+ 
+Now we have got many event details in comma-separated format. 
+But we want only specific events based on some classifications in | separated format.
+Get the event details in comma separated format and get event name/event type/organizer 
+and display the events with the specified details in | separated format.
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement.
+All class names, attribute names and method names should be the same as specified in the problem statement.
+
+Create a class Event with the following private attributes
+
+Attributes	Datatype
+eventName	String
+eventType	String
+organizer	String
+Include appropriate getters and setters.
+Create default constructor and a parameterized constructor with arguments in order 
+Event(String eventName, String eventType, String organizer).
+
+Include the following public methods in the Event class.
+
+Method																				
+List<Event> filterEvents(List<Event> eventList,String name,int id))	
+This method takes the event list, name to be searched and type of filtering the event list.
+																	
+Description															
+It returns the List <Event> of filtered data.
+This method filters data using Lambda Expression.
+Create a driver class Main to access the above classes.
+ 
+
+Input Format:
+The first line of input corresponds to the number of events 'n'.
+The next 'n' line of input corresponds to the event details in the CSV format of (Event Name,Event Type,Orgnaizer Name).
+The next line of input corresponds to the type of filtering 'm'. Types-using event name, using event type, using organizer name.
+The next line corresponds to the name of filtering.
+Refer to sample input for formatting specifications.
+
+Output Format:
+The output consists of filtered event details separated by  "|". If no event is there for specified search then display as "No results found".
+Refer to sample output for formatting specifications.
+
+Problem Constraints:
+If n > 0 get the details, else display as "Invalid Input".
+If m > 0 and m < 4 , filter the details, else display as "Invalid Input".
+
+
+Note: All Texts in bold corresponds to the input and rest are output
+
+Sample Input and Output 1:
+
+Enter number of events
+4
+Enter event details in CSV(Event Name,Event Type,Orgnaizer Name)
+Lulu,Fun party,William
+Maazdha,Birthday,Edilbert
+Shadhi Mela,Wedding,Yadu singla
+Lulu,Wedding,Edilbert
+Filter:
+1)Using Event name
+2)Using Event type
+3)Using Organizer name
+Choice:
+2
+Enter value:
+Wedding
+Shadhi Mela|Wedding|Yadu singla
+Lulu|Wedding|Edilbert
+
+
+Sample Input and Output 2:
+​​​​​​​
+Enter number of events
+4
+Enter event details in CSV(Event Name,Event Type,Orgnaizer Name)
+Lulu,Fun party,William
+Maazdha,Birthday,Edilbert
+Shadhi Mela,Wedding,Yadu singla
+Lulu,Wedding,Edilbert
+Filter:
+1)Using Event name
+2)Using Event type
+3)Using Organizer name
+Choice:
+5
+Invalid Input

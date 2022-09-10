@@ -1,0 +1,48 @@
+Air India announced the discount for the season tickets. 
+Since the number of passengers travelling from Chennai to Coimbatore is higher than any other location, 
+they were announced a special offer.
+
+The offer is as follows :
+
+For the passengers who have consecutively travelled  from Chennai to Coimbatore 
+for two weekends can avail an offer for their third weekend trip to that same location. 
+Given the number of  passengers and the passengers list for the three weekends, 
+Find the passengers who are eligible to avail the offer. 
+
+Create three lists for the passengers travelling three weekends and 
+display the passengers list who can avail the offer.
+
+Input and Output Format:
+[ Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output. ]
+
+Sample input and output:
+
+Enter the number of passengers in First friday flight from Chennai to Coimbatore
+6
+Enter the passengers Names
+Madhu  
+Shanmathi
+Thara
+Praveen
+Krishna
+Mounish
+Enter the number of passengers in Second friday flight from Chennai to Coimbatore
+5   
+Enter the passengers Names
+Raghul
+Shanmathi
+Thara
+Krishna
+Thana
+Enter the number of passengers in third friday flight from Chennai to Coimbatore
+3
+Enter the passengers Names
+Shanmathi
+Thara
+Raghul
+
+Expected output:
+Selected passengers for discount:
+Shanmathi
+Thara

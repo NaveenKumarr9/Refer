@@ -1,0 +1,23 @@
+
+<div class="card my-5">
+	<div class="card-body">
+		<table class="table table-bordered table-striped">
+			<thead class="thead-dark">
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Name</th>
+					<th scope="col">Marks</th>
+					<th scope="col">Grade</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let student of students">
+					<td>{{ student.id }}</td>
+					<td>{{ student.name }}</td>
+					<td>{{ student.marks }}</td>
+					<td>{{ student.grade }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

@@ -1,0 +1,14 @@
+  version: '3'
+  
+  
+  services:
+    angular-service:
+      container_name: hrms-front-end-container
+      restart: unless-stopped
+      build: ./
+      volumes: 
+      - './:/usr/src/app'
+      ports: 
+        - "4200:80"
+      stdin_open: true #show up logs from container trobleshooting
+      tty: true

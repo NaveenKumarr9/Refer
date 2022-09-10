@@ -1,0 +1,51 @@
+sort() based on Price And Booking Time
+ 
+When we sort based on the price of tickets, 
+what happens if the price of 2 objects is the same, 
+so here we are gonna use another parameter to sort in the situation. 
+In our program, ticket booking is an integral part and we are gonna get those details and sort them based on the price of the bill and 
+if prices are equal we are gonna use the booking time to sort.
+
+Strictly adhere to the Object-Oriented specifications given in the problem statement. 
+All class names, attribute names and method names should be the same as specified in the problem statement.
+
+Create a class TicketBooking with the following private attributes,
+Attribute	DataType
+stageEventShow	String
+bookingTime	Date
+seatNumber	String
+price	Double
+
+Include appropriate getter/setter, default constructor and parameterized constructor.
+
+Override toString() and print the details in a tabular format.
+
+Create a class PriceAndBookingTimeComparator to implement the comparator method. First sort based on price and if the price is equal sort based on bookingTime.
+
+Create driver class Main and use the main method to get inputs, sort, and display.
+
+Input Format:
+The first line of input is the number of bookings n.
+The next n lines have the booking details in CSV format (stageEventShow,bookingTime,seatNumber,price).
+
+Output Format:
+Use "%-15s%-15s%-15s%-15s" to display the booking details in the sorted as in tabular form.
+Refer to sample input and output for other further details and format of the output.
+
+Sample Input and Output 1:
+[All Texts in bold corresponds to the input and rest are output]
+
+Enter the number of bookings:
+3
+Enter the details of booking 1
+Magic Show,01-01-2018,10,200
+Enter the details of booking 2
+Cricket match,02-01-2018,25,2500
+Enter the details of booking 3
+Seminar,02-01-2018,150,200
+
+Sorted Order:
+Event name     Booking Time   Seat number    Price          
+Magic Show     01-01-2018     10             200.0          
+Seminar        02-01-2018     150            200.0          
+Cricket match  02-01-2018     25             2500.0
