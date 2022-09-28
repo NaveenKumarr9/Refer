@@ -1,0 +1,7 @@
+{
+  "HTTP_PORT" : 8080,
+  "url": "jdbc:mariadb://127.0.0.1/task",
+  "driver_class": "org.mariadb.jdbc.Driver",
+  "user": "root",
+  "password": "root"
+}
