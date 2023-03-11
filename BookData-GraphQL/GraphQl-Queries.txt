@@ -1,0 +1,67 @@
+
+
+---------------------------------------------------------------------------------GRAPHQL QUERIES-------------------------------------------------------------------------
+
+
+-------------POST----------------
+mutation{
+    createBook(book:{
+         title:"Python",
+        desc:"Python for advanced",
+        author:"PAR",
+        price:2999,
+        pages:100
+    }){
+        id
+        title
+    }
+}
+
+--------------DELETE-------------
+
+mutation{
+    deleteBook(bookId:4)
+}
+
+
+----------------PUT--------------
+
+mutation {
+  updateBook(
+    bookId: 5
+    book: {
+      title: "Core Java", 
+      desc: "Java for advanced", 
+      author: "James Gosling", 
+      price: 2999, 
+      pages: 100 }
+  ) {
+    id
+    title
+    author
+  }
+}
+
+-----------GET-DATA BY ID---------
+
+query{
+    getBook(bookId:1){
+        desc
+        title
+    }
+}
+
+
+------------GET-ALL DATA------------
+
+query{
+    allBooks{
+        id
+        title
+        desc
+		author
+		price
+		pages
+    }
+}
+
