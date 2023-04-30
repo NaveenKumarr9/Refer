@@ -3,15 +3,17 @@ package com.employee.controller;
 import com.employee.entity.Employee;
 import com.employee.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/api/employees")
 public class EmployeeController {
     @Autowired
    private EmployeeService employeeService;
 
-    @GetMapping("/employee")
+    @GetMapping("/employeeID")
     List<Employee> getAllEmployeeDetails() {
         return employeeService.getAllEmployeeDetails();
     }
